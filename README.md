@@ -1,6 +1,6 @@
 # seqfold
 
-[![DOI](https://zenodo.org/badge/224018980.svg)](https://zenodo.org/badge/latestdoi/224018980)
+[![PyPI version](https://badge.fury.io/py/seqfold.svg)](https://pypi.org/project/seqfold/) [![DOI](https://zenodo.org/badge/224018980.svg)](https://zenodo.org/badge/latestdoi/224018980)
 
 Predict the minimum free energy structure of nucleic acids.
 
@@ -43,7 +43,7 @@ for struct in structs:
 cache = dg_cache("GGGAGGTCGTTACATCTGGGTAACACCGGTACTGATCCGGTGACCTCCC")
 
 # `dot_bracket` returns a dot_bracket representation of the folding
-print(dot_bracket(structs))  # ((((((((.((((......))))..((((.......)))).))))))))
+print(dot_bracket(seq, structs))  # ((((((((.((((......))))..((((.......)))).))))))))
 ```
 
 ### CLI
